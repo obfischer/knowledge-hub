@@ -1,0 +1,11 @@
+name: hub
+title: Documentation Hub
+start_page: index.adoc
+version: ~
+
+asciidoc:
+  attributes:
+    page-toclevels: 3
+
+nav:
+  - modules/ROOT/navigation.adoc

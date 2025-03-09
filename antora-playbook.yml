@@ -1,0 +1,18 @@
+site:
+  title: Documentation Hub
+  start_page: hub::index.adoc
+
+content:
+  sources:
+    - url: .
+      branches: HEAD
+      start_paths: [ ./docs ]
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+
+asciidoc:
+  extensions:
+    - asciidoctor-kroki
