@@ -1,0 +1,6 @@
+= Welcome to my Documentation Hub
+
+My name is Oliver Fischer, and I am an independent IT consultant from the Berlin metropolitan region.
+
+On this site you will find a collection of best practices and personal standards I have developed for my self over the time.
+
