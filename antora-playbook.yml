@@ -1,0 +1,20 @@
+site:
+  title: Documentation
+  #url: https://xenodochial-spence-280948.netlify.app
+  start_page: hub::index.adoc
+
+content:
+  sources:
+    - url: .
+      branches: HEAD
+      start_paths: [ ./docs ]
+
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+
+asciidoc:
+  extensions:
+    - asciidoctor-kroki
