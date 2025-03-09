@@ -8,4 +8,4 @@ asciidoc:
     page-toclevels: 3
 
 nav:
-- modules/ROOT/navigation.adoc
+  - modules/ROOT/navigation.adoc

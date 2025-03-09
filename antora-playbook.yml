@@ -1,6 +1,5 @@
 site:
-  title: Documentation
-  #url: https://xenodochial-spence-280948.netlify.app
+  title: Documentation Hub
   start_page: hub::index.adoc
 
 content:
@@ -8,7 +7,6 @@ content:
     - url: .
       branches: HEAD
       start_paths: [ ./docs ]
-
 
 ui:
   bundle:
