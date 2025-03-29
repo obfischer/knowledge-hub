@@ -7,6 +7,8 @@ content:
     - url: .
       branches: HEAD
       start_paths: [ ./docs ]
+    - url: https://github.com/obfischer/maven-best-practices.git
+      branches: [future]
 
 ui:
   bundle:
