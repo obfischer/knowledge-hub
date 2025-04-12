@@ -2,6 +2,10 @@ name: Publish to GitHub Pages
 on:
   push:
     branches: [future]
+  schedule:
+    # Publish every day, so can be sure that all updates to the modules
+    # will be published, even if I don't take care of this taskgit
+    - cron: "0 4 * * *"
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 concurrency:
