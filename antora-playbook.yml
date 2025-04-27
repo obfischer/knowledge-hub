@@ -9,6 +9,10 @@ content:
       start_paths: [ ./docs ]
     - url: https://github.com/obfischer/maven-best-practices.git
       branches: [future]
+    - url: https://github.com/obfischer/architecture-best-practices.git
+      branches: [future]
+    - url: https://github.com/obfischer/api-best-practices.git
+      branches: [future]
 
 ui:
   bundle:

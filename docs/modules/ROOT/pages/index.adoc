@@ -4,3 +4,12 @@ My name is Oliver Fischer, and I am an independent IT consultant from the Berlin
 
 On this site you will find a collection of best practices and personal standards I have developed for my self over the time.
 
+== Disclaimer
+
+The contents of the individual modules are supplemented within the framework of the time available and the topics I am currently working on.
+
+== List of collections of best practices
+
+* xref:apibestpractices:ROOT:overview.adoc[]
+* xref:swarch:ROOT:overview.adoc[]
+* xref:mavenbestpractices:ROOT:overview.adoc[]
