@@ -22,3 +22,7 @@ ui:
 asciidoc:
   extensions:
     - asciidoctor-kroki
+
+antora:
+  extensions:
+    - '@antora/collector-extension'
