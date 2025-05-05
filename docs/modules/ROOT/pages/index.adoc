@@ -10,6 +10,6 @@ The contents of the individual modules are supplemented within the framework of 
 
 == List of collections of best practices
 
-* xref:apibestpractices:ROOT:overview.adoc[]
-* xref:swarch:ROOT:overview.adoc[]
-* xref:mavenbestpractices:ROOT:overview.adoc[]
+* xref:apibestpractices:ROOT:index.adoc[]
+* xref:swarch:ROOT:index.adoc[]
+* xref:mavenbestpractices:ROOT:index.adoc[]
