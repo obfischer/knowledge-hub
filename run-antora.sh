@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 
-usage() { echo "Usage: $0 [-f] [-l] [-h]" 1>&2; exit $1; }
+usage() { echo "Usage: $0 [-f] [-l] [-h]" 1>&2; exit "${1}"; }
 
 set -e -u -o pipefail
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
-if [ ! $(2>&- command -v npx) ]; then
+if [ ! "$(2>&- command -v npx)" ]; then
   1>&2 echo npx could not be found
   exit 1
 fi
 
-OPTIONS=""
+OPTIONS=()
 
 while getopts "hlf" opt; do
   case "${opt}" in
@@ -20,11 +20,11 @@ while getopts "hlf" opt; do
       ;;
 
     l)
-      OPTIONS+="--log-level=all "
+	OPTIONS+=("--log-level=all")
       ;;
 
     f)
-      OPTIONS+="--fetch "
+      OPTIONS+=("--fetch")
       ;;
 
     *)
@@ -33,4 +33,4 @@ while getopts "hlf" opt; do
   esac
 done
 
-npx antora ${OPTIONS} ${SCRIPT_DIR}/antora-playbook.yml
+npx antora "${OPTIONS[@]}" "${SCRIPT_DIR}/antora-playbook.yml"
